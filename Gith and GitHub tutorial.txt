@@ -1,0 +1,89 @@
+**Gith and GitHub tutorial**
+
+---> Git:- It is a version control system. It helps to track changes in code.
+It is:- popular, free and open source, fast and scalable.
+Importance:- Track the history and collaborate
+
+---> GitHub:- Websites that allow developers to store and manage their code using Git.
+Ex:- like as Folder. In GitHub language as Repository(Repo)
+
+---> Readme.file:- It is contain about the project like name,how to use,which thing is used to build the project etc.
+
+---> <br> tag is used to next line.
+
+---> Configuring Git:- konsa acc ka andr chnges krna hai
+Two types:- 
+1. Global:- chnges with specific email id repo
+2. Local:- chnges with other acc in repo
+Commands:- git configure --global user.name"My name"
+git configure --globaluser.email"someone@email.com"
+git configure --list
+
+---> Clone and Status
+*Clone:- Cloning a repo on our local machine 
+git clone <- some link->
+*Status:- display the state of the code
+git status
+
+---> cd:- Change Directory:- It is used to move in the sub folder of the main folder
+
+---> To clear the Terminal used command clear
+
+---> ls:- list files:- it is used to show all the list of the files and folders in the terminal
+
+---> ls -a:- It is used to show all the files and folders along with the hidden files
+
+---> If vs code shows M:- is defined as Modified:- which chng is code in vs code but not in GitHub repo
+                                        Unmodified:- unchanged
+                                        U:- is defined as Untracked:- new files that git doesn"t yet track
+                                        staged:- file is ready to be commited
+
+---> Add and Commit
+*Add:- add new or changed files in your working directory to the git staging area
+git add<-file name->
+*Commit:- it is the record of chng
+git commit -m"some message"
+
+---> Push cmnd:- Upload local repo content to remote repo like as vs code to GitHub
+git push origin main 
+
+---> init command:- used to create a new git repo
+git init
+git remote and origin<-link->
+git remote -v (to verify remote)
+git branch (to check branch)
+git branch -Mmain(to rename branch)
+git push origin main
+
+---> Work flow in local Git:- GitHub repo -> Clone -> Changes -> Add -> Commit -> Push
+
+---> Branch commands:-
+git branch (to check branch)
+git checkout <-branch name-> (to navigate)
+git checkout -b<-new branch name-> (to create new branch)
+git branch -d <-branch name-> (to delete branch)
+
+---> Merging code:- 
+Way :- git diff<-branch name-> (to compare commit, branch,file and more)
+git merge<-branch name-> (to merge 2 branches)
+Way2 :- create PR(pull Request) 
+
+--->Pull command:- used to fetch and dwnld content from a remote repo and immediately update the local repo to match that content
+git pull origin main
+
+--->undoing changes:- esa chng jo ni krna tha pr hm kr deta hai
+Case-1:- staged changes
+git reset<-file name->
+git reset
+case 2:- Uncommited chng(for one commit)
+git reset HEAD~1 
+Case 3:- Commited chng(for many commit)
+git reset<-commit hash->
+git reset --hard<-commit hash->
+
+--->Fork:- It is a new repo that shares code and visibility settings with the original "upstream" repo.
+Fork is a rough copy
+
+
+
+
